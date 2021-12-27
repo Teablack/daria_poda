@@ -9,86 +9,91 @@ body {
     font-family: "Ribeye Marrow", cursive;
 }
 
-.App {}
-
-.header {
-    background-color: #f5fa19;
-    text-align: center;
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
 }
 
-.header>p {
-    color: #18c0fb;
-    font-weight: 900;
-    font-size: 90px;
-    -webkit-text-stroke: 1px #ffffff;
-    position: relative;
-    z-index: 1;
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
 }
 
-.intro {
-    display: flex;
-    font-size: 100px;
-    color: #9019c8;
-    -webkit-text-stroke: 0.5px #ffffff;
-    align-items: center;
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
 }
 
-.intro img {
-    /* position: absolute; */
-    margin: -10% 0 -5% 0;
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
 }
 
-.intro p {
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     z-index: 2;
-    position: relative;
+    -moz-animation: move-background 70s linear infinite;
+    -ms-animation: move-background 70s linear infinite;
+    -o-animation: move-background 70s linear infinite;
+    -webkit-animation: move-background 70s linear infinite;
+    animation: move-background 70s linear infinite;
 }
 
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 130px solid #c4c4c4;
-    /* position: absolute; */
-    z-index: 1;
-}
-
-.figure {
-    position: relative;
-}
-
-.square {
-    background-color: #18a0fb;
-    /* position: absolute; */
-    height: 100px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .header>p {
-        font-size: 70px;
-    }
-    .intro img {
-        /* position: absolute; */
-        width: 300px;
-        height: auto;
-        margin: -10% 0 -5% 0;
-    }
-    .intro p {
-        font-size: 70px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .header>p {
-        font-size: 40px;
-    }
-    .intro img {
-        /* position: absolute; */
-        margin: -10% 0 -5% 0;
-        width: 300px;
-        height: auto;
-    }
-    .intro p {
-        font-size: 50px;
-    }
+.clouds {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    -moz-animation: move-background 150s linear infinite;
+    -ms-animation: move-background 150s linear infinite;
+    -o-animation: move-background 150s linear infinite;
+    -webkit-animation: move-background 150s linear infinite;
+    animation: move-background 150s linear infinite;
 }
