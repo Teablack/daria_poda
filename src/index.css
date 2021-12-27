@@ -45,7 +45,7 @@ body {
     }
 }
 
-.background-container {
+.App {
     position: fixed;
     top: 0;
     left: 0;
@@ -81,19 +81,17 @@ body {
     animation: move-background 70s linear infinite;
 }
 
-.clouds {
-    width: 10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
     z-index: 3;
-    -moz-animation: move-background 150s linear infinite;
-    -ms-animation: move-background 150s linear infinite;
-    -o-animation: move-background 150s linear infinite;
-    -webkit-animation: move-background 150s linear infinite;
-    animation: move-background 150s linear infinite;
+}
+
+.card {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(144, 19, 254, 0.13);
+    border-radius: 12px;
+    border: 2px solid rgba(202, 12, 240, 0.125);
+    z-index: inherit;
 }
