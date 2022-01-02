@@ -51,6 +51,8 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .stars {
@@ -84,14 +86,44 @@ body {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     z-index: 3;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
-    backdrop-filter: blur(25px) saturate(200%);
-    -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(144, 19, 254, 0.13);
     border-radius: 12px;
     border: 2px solid rgba(202, 12, 240, 0.125);
     z-index: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    font-size: 20px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.card:last-child {
+    margin-bottom: auto;
+}
+
+.card:hover {
+    max-width: 550px;
+    max-height: 550px;
+    position: absolute;
+    z-index: 4;
+    align-self: center;
 }
