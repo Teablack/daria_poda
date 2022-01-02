@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/daria_poda/static/css/main.8272d374.css",
-    "main.js": "/daria_poda/static/js/main.b53c3a7b.js",
+    "main.css": "/daria_poda/static/css/main.88fabd22.css",
+    "main.js": "/daria_poda/static/js/main.9b9b9719.js",
+    "static/media/aparat.png": "/daria_poda/static/media/aparat.3078c6cd7ea1954f9fb5.png",
+    "static/media/todolist.png": "/daria_poda/static/media/todolist.d9ebff900f3cd8bf79b7.png",
     "index.html": "/daria_poda/index.html",
-    "main.8272d374.css.map": "/daria_poda/static/css/main.8272d374.css.map",
-    "main.b53c3a7b.js.map": "/daria_poda/static/js/main.b53c3a7b.js.map"
+    "main.88fabd22.css.map": "/daria_poda/static/css/main.88fabd22.css.map",
+    "main.9b9b9719.js.map": "/daria_poda/static/js/main.9b9b9719.js.map"
   },
   "entrypoints": [
-    "static/css/main.8272d374.css",
-    "static/js/main.b53c3a7b.js"
+    "static/css/main.88fabd22.css",
+    "static/js/main.9b9b9719.js"
   ]
 }
